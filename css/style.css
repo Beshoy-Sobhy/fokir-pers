@@ -1,0 +1,609 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.layer-home{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90vh;
+    background-color: #333333;
+    opacity: .4;
+}
+.home{
+    background-image: url(../images/slider-01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
+    z-index: 4;
+}
+.cont2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.logo-home p{
+    font-size: 28px;
+    color: #ff305b;
+}
+.container ul{
+    display: flex;
+    list-style: none;
+}
+.container ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 18px;
+}
+.container ul li:hover a {
+    color: #ff305b;
+}
+.cen-tex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cen-tex h3{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.cen-tex h1{
+    color: #ff305b;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+@keyframes typeEffect {
+    0% {
+        content: "";
+    }
+    1% {
+        content: "P|";
+    }
+    2% {
+      content: "Pr|";
+    }
+    3% {
+      content: "Pro|";
+    }
+    4% {
+      content: "Prof|";
+    }
+    5% {
+      content: "Profe|";
+    }
+    6% {
+      content: "Profes|";
+    }
+    7% {
+      content: "Profess|";
+    }
+    8% {
+      content: "Professi|";
+    }
+    9% {
+      content: "Professio|";
+    }
+    10% {
+      content: "Professiona|";
+    }
+    11% {
+      content: "Professional|";
+    }
+    12% {
+      content: "Professional |";
+    }
+    13% {
+      content: "Professional W|";
+    }
+    14% {
+      content: "Professional We|";
+    }
+    15% {
+      content: "Professional Web|";
+    }
+    16% {
+      content: "Professional Web |";
+    }
+    17% {
+      content: "Professional Web D|";
+    }
+    18% {
+      content: "Professional Web De|";
+    }
+    19% {
+      content: "Professional Web Dev|";
+    }
+    20% {
+      content: "Professional Web Deve|";
+    }
+    21% {
+      content: "Professional Web Devel|";
+    }
+    22% {
+      content: "Professional Web Develo|";
+    }
+    23% {
+      content: "Professional Web Develop|";
+    }
+    24% {
+      content: "Professional Web Deveplope|";
+    }
+    25% {
+      content: "Professional Web Deveploper|";
+    }
+    26% {
+      content: "Professional Web Deveplope|";
+    }
+    27% {
+      content: "Professional Web Deveplop|";
+    }
+    28% {
+      content: "Professional Web Deveplo|";
+    }
+    29% {
+      content: "Professional Web Devepl|";
+    }
+    30% {
+      content: "Professional Web Devep|";
+    }
+    31% {
+      content: "Professional Web Deve|";
+    }
+    32% {
+      content: "Professional Web Dev|";
+    }
+    33% {
+      content: "Professional Web De|";
+    }
+    34% {
+      content: "Professional Web Des|";
+    }
+    35% {
+      content: "Professional Web Desi|";
+    }
+    36% {
+      content: "Professional Web Desig|";
+    }
+    37% {
+      content: "Professional Web Design|";
+    }
+    38% {
+      content: "Professional Web Designe|";
+    }
+    39% {
+      content: "Professional Web Designer|";
+    }
+    40% {
+      content: "Professional Web Designe|";
+    }
+    41% {
+      content: "Professional Web Design|";
+    }
+    42% {
+      content: "Professional Web Desig|";
+    }
+    43% {
+      content: "Professional Web Desi|";
+    }
+    44% {
+      content: "Professional Web Des|";
+    }
+    45% {
+      content: "Professional Web De|";
+    }
+    46% {
+      content: "Professional Web D|";
+    }
+    47% {
+      content: "Professional Web|";
+    }
+    48% {
+      content: "Professional We|";
+    }
+    49% {
+      content: "Professional W|";
+    }
+    50% {
+      content: "Professional|";
+    }
+    51% {
+      content: "Professiona|";
+    }
+    52% {
+      content: "Profession|";
+    }
+    53% {
+      content: "Professio|";
+    }
+    54% {
+      content: "Professi|";
+    }
+    55% {
+      content: "Profess|";
+    }
+    56% {
+      content: "Profes|";
+    }
+    57% {
+      content: "Profe|";
+    }
+    58% {
+      content: "Prof|";
+    }
+    59% {
+      content: "Pro|";
+    }
+    60% {
+      content: "Pr|";
+    }
+    61% {
+      content: "P|";
+    }
+    62% {
+      content: "";
+    }
+}
+.cen-tex h1::after{
+    content: "";
+    animation: typeEffect 10s steps(25, end) infinite; 
+    display: block;
+    color: white;
+    font-size: 26px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.container-pers{
+    width: 100%;
+    height: 90vh;
+    margin-top: 100px;
+}
+.cont-them{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container-pers .cont-them .imge-frame {
+    border: 7px solid rgb(51, 51, 51);
+    border-radius: 0.25rem;
+}
+.container-pers .cont-them .imge-frame .image{
+    position: relative;
+    overflow: hidden;
+}
+.container-pers .cont-them .imge-frame .layer-img{
+    position: absolute;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .6;
+    top: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container-pers .cont-them .imge-frame .layer-img i{
+    color: white;
+    margin-left: 5px;
+}
+.container-pers .cont-them .imge-frame .image:hover .layer-img{
+    background-color: black;
+    opacity: .6;
+    top: 0;
+    left: 0;
+}
+.container-pers .cont-them .image{
+    transform: translate(20px, 20px);
+}
+.container-pers .cont-them .tex-pers {
+    width: 60%;
+    height: 100%;
+}
+.container-pers .cont-them .tex-pers p{
+    font-weight: 300;
+    font-family: 'Roboto',sans-serif;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #777;
+}
+.container-pers .cont-them .tex-pers hr{
+    border-bottom: 1px dotted #777;
+    margin-bottom: 30px;
+}
+.container-pers .cont-them .tex-pers h2{
+    font-size: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600;
+    margin-bottom: 16px;
+    position: relative;
+}
+.container-pers .cont-them .tex-pers h2::before {
+    content:"";
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background-color: #ff305b;
+    left: -10px;
+    top: 0;
+}
+.container-pers .cont-them .tex-pers .ul-main{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.container-pers .cont-them .tex-pers .ul-main li{
+    list-style: none;
+    margin: 10px;
+}
+.container-pers .cont-them .tex-pers .button-pers button {
+    width: 110px;
+    height: 40px;
+    background-color: #ff305b;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    margin: 10px;
+}
+.container-pers .cont-them .tex-pers .button-pers button a{
+    text-decoration: none;
+    color: white;
+}
+.container-pers .cont-them .tex-pers .button-pers button i{
+    font-size: 12px;
+}
+.services{
+    width: 100%;
+    height: 70vh;
+    background-color: #eee;
+}
+.p{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px ;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.services .cont-serv{
+    margin-top: 10px;
+}
+.hr1{ 
+    width: 100px;
+    height: 3px;
+    background-color: #ff305b;
+    left: 50%;
+    position: absolute;
+    transform: translatex(-50%);
+}
+.hr2{
+    width: 200px;
+    height: 2px;
+    background-color: #ff305b;
+    left: 50%;
+    margin-top: 5px;
+    position: absolute;
+    transform: translatex(-50%);
+}
+.cont-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-cards .card{
+    padding:40px;
+    width: 280px;
+    height: 200px;
+    text-align: center;
+    margin: 50px 5px;
+    transition: .5s;
+
+}
+.cont-cards .card i{
+    font-size: 25px;
+    color: #ff305b;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.cont-cards .card:hover{
+    background-color: white;
+    box-shadow: 0px 0px 5px  black;
+}
+.portofolio{
+    width: 100%;
+    height: 80vh;
+}
+.portofolio .cont-serv .card{
+    display: flex;
+    justify-content: center;
+}
+.portofolio .cont-serv .card img{
+    width: 350px;
+    margin: 10px;
+}
+.portofolio .cont-serv .card .box-img{
+    position: relative;
+}
+.portofolio .cont-serv .card .layer{
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.portofolio .cont-serv .card .layer:hover{
+    opacity: .5;
+}
+.Testimonial{
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    background-color: #eee;
+}
+.Testimonial .cont-box {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.Testimonial .cont-box .card{
+    width: 222px;
+    height: 103px;
+    text-align: center;
+    padding: 20px;
+    color: #ff305b;
+    margin-top: 50px;
+}
+.Testimonial .cont-box .card h2{
+    margin: 20px;
+    font-weight: bold;
+    color: black;
+}
+.Testimonial .cont-box .card p{
+    margin: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.blog{
+    width: 100%;
+    height: 90vh;
+    background-color: #eee;
+}
+.blog .cont-blog-card{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.blog .cont-blog-card .card img{
+    width: 350px;
+    height: 200px;
+    transform: translate(-10px,-30px);
+}
+.blog .cont-blog-card .card iframe{
+    transform: translate(0px,-23px);
+    width: 350px;
+    height: 200px;
+}
+.blog .cont-blog-card .card{
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    margin: 15px;
+}
+.blog .cont-blog-card .card p{
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin-left: 9px;
+}
+.blog .cont-blog-card .card .roor{
+    font-size: 18px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: bold;
+}
+.contact{
+    width: 100%;
+    height: 90vh;
+}
+.contact .form .cards-ot{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact .form .cards-ot input{
+    width: 450px;
+    margin: 10px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+}
+.contact .form .in2 input {
+    width: 925px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 210px;
+}
+.contact .form .in2 textarea{
+    width: 925px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 210px;
+    padding: 10px;
+    font-size: 15px;
+}
+.contact .form .in2 button{
+    width: 100px;
+    height: 40px;
+    margin-left: 250px;
+    margin-top: 50px;
+    background-color: #ff305b;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+.wat-mar{
+    width: 100%;
+    height: 22vh;
+    background-color: #333333;
+}
+.wat-mar .cont-wat {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.wat-mar .cont-wat i{
+    font-size: 15px;
+    margin:0 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.wat-mar .cont-wat .tex .mid{
+    color: red;
+    font-size: 14px;
+    display: inline-block;
+}
+.wat-mar .cont-wat .tex p{
+    display: inline-block;
+    font-size: 14px;
+}
